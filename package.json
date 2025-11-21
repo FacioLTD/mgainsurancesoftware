@@ -1,0 +1,20 @@
+{
+  "name": "mga-insurance-software",
+  "version": "1.0.0",
+  "description": "MGA Insurance Software - Comprehensive guides and comparisons for MGA software and policy administration systems",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "MGA software",
+    "policy administration system",
+    "insurance technology",
+    "Lloyd's coverholder",
+    "delegated authority"
+  ],
+  "author": "MGA Insurance Software",
+  "license": "UNLICENSED",
+  "private": true
+}
+
