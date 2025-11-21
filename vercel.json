@@ -54,7 +54,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(html|htm))",
+      "source": "/(.*\\.html|.*\\.htm)",
       "headers": [
         {
           "key": "Cache-Control",
