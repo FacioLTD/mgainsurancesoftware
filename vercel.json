@@ -54,20 +54,18 @@
       ]
     },
     {
-      "source": "/**/*.html",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=0, must-revalidate"
         }
-      ]
-    },
-    {
-      "source": "/**/*.htm",
-      "headers": [
+      ],
+      "has": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
+          "type": "header",
+          "key": "content-type",
+          "value": "text/html"
         }
       ]
     }
