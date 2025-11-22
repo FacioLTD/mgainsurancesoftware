@@ -991,6 +991,57 @@ li {
     transform: translateX(4px);
 }
 
+/* Glossary Styles */
+.glossary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.glossary-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--box-shadow-md);
+    transition: all var(--transition-base);
+}
+
+.glossary-item:hover {
+    box-shadow: var(--box-shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.glossary-item dt {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--border-light);
+}
+
+.glossary-item dd {
+    margin: 0;
+    padding-top: var(--spacing-md);
+    color: var(--text-secondary);
+    line-height: var(--line-height-base);
+}
+
+.glossary-item dd p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.glossary-item dd p:last-child {
+    margin-bottom: 0;
+}
+
+.glossary-item strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 .checklist-item h3 {
     color: var(--primary-color);
     margin-top: 0;
