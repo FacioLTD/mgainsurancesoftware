@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGA Data Standard: Standard Data Model for Policy Administration</title>
+    <meta name="description" content="Standard data model and field definitions for MGA policy administration systems. Technical specification for developers and system integrators.">
+    <link rel="canonical" href="https://www.mgainsurancesoftware.com/mga-data-standard.html">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "MGA Data Standard: Standard Data Model for Policy Administration",
+      "description": "Technical specification of standard data fields and data types for MGA policy administration systems",
+      "author": {
+        "@type": "Organization",
+        "name": "MGA Tech Guide"
+      }
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="nav-wrapper" aria-label="Main navigation">
+                <a href="/" class="logo"><span class="logo-text">MGA Insurance Software</span></a>
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/mga-technical-glossary.html">Glossary</a></li>
+                    <li><a href="/mga-data-standard.html">Data Standard</a></li>
+                    <li><a href="/mga-tech-pitfalls.html">Tech Pitfalls</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <section class="hero-section-small">
+            <div class="container">
+                <h1>MGA Data Standard</h1>
+                <p class="hero-subtitle">Standard Data Model for Policy Administration Systems</p>
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <div class="container">
+                <h2>Core Policy Data Fields</h2>
+                <p>This document defines the standard data model for MGA policy administration systems. Use this specification when building custom integrations or evaluating PAS platforms.</p>
+                
+                <table class="data-standard-table">
+                    <thead>
+                        <tr>
+                            <th>Field Name</th>
+                            <th>Data Type</th>
+                            <th>Required</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>policy_number</code></td>
+                            <td>String (50)</td>
+                            <td>Yes</td>
+                            <td>Unique policy identifier</td>
+                            <td>"POL-2025-001234"</td>
+                        </tr>
+                        <tr>
+                            <td><code>inception_date</code></td>
+                            <td>Date</td>
+                            <td>Yes</td>
+                            <td>Policy start date (YYYY-MM-DD)</td>
+                            <td>"2025-01-15"</td>
+                        </tr>
+                        <tr>
+                            <td><code>expiry_date</code></td>
+                            <td>Date</td>
+                            <td>Yes</td>
+                            <td>Policy end date (YYYY-MM-DD)</td>
+                            <td>"2026-01-14"</td>
+                        </tr>
+                        <tr>
+                            <td><code>insured_name</code></td>
+                            <td>String (200)</td>
+                            <td>Yes</td>
+                            <td>Full legal name of insured</td>
+                            <td>"ABC Manufacturing Ltd"</td>
+                        </tr>
+                        <tr>
+                            <td><code>premium</code></td>
+                            <td>Decimal(12,2)</td>
+                            <td>Yes</td>
+                            <td>Total premium amount</td>
+                            <td>12500.00</td>
+                        </tr>
+                        <tr>
+                            <td><code>commission_rate</code></td>
+                            <td>Decimal(5,2)</td>
+                            <td>Yes</td>
+                            <td>Commission percentage</td>
+                            <td>15.00</td>
+                        </tr>
+                        <tr>
+                            <td><code>limit</code></td>
+                            <td>Decimal(15,2)</td>
+                            <td>Yes</td>
+                            <td>Policy limit amount</td>
+                            <td>1000000.00</td>
+                        </tr>
+                        <tr>
+                            <td><code>deductible</code></td>
+                            <td>Decimal(12,2)</td>
+                            <td>Yes</td>
+                            <td>Deductible amount</td>
+                            <td>5000.00</td>
+                        </tr>
+                        <tr>
+                            <td><code>class_of_business</code></td>
+                            <td>String (50)</td>
+                            <td>Yes</td>
+                            <td>Insurance class code</td>
+                            <td>"Property", "Liability"</td>
+                        </tr>
+                        <tr>
+                            <td><code>binder_id</code></td>
+                            <td>String (50)</td>
+                            <td>Yes</td>
+                            <td>Binder/authority identifier</td>
+                            <td>"BIND-2024-001"</td>
+                        </tr>
+                        <tr>
+                            <td><code>status</code></td>
+                            <td>Enum</td>
+                            <td>Yes</td>
+                            <td>Policy status</td>
+                            <td>"Active", "Cancelled", "Expired"</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Risk Level Data Fields</h2>
+                <table class="data-standard-table">
+                    <thead>
+                        <tr>
+                            <th>Field Name</th>
+                            <th>Data Type</th>
+                            <th>Required</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>address_line_1</code></td>
+                            <td>String (200)</td>
+                            <td>Yes</td>
+                            <td>Primary address</td>
+                        </tr>
+                        <tr>
+                            <td><code>postcode</code></td>
+                            <td>String (20)</td>
+                            <td>Yes</td>
+                            <td>Postal/ZIP code</td>
+                        </tr>
+                        <tr>
+                            <td><code>construction_type</code></td>
+                            <td>String (50)</td>
+                            <td>No</td>
+                            <td>"Frame", "Masonry", "Concrete"</td>
+                        </tr>
+                        <tr>
+                            <td><code>occupancy_type</code></td>
+                            <td>String (50)</td>
+                            <td>No</td>
+                            <td>"Office", "Warehouse", "Retail"</td>
+                        </tr>
+                        <tr>
+                            <td><code>annual_revenue</code></td>
+                            <td>Decimal(15,2)</td>
+                            <td>No</td>
+                            <td>Business annual revenue</td>
+                        </tr>
+                        <tr>
+                            <td><code>risk_score</code></td>
+                            <td>Decimal(5,2)</td>
+                            <td>No</td>
+                            <td>Calculated risk score (0-100)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Data Type Definitions</h2>
+                <dl class="glossary-list">
+                    <div class="glossary-item">
+                        <dt><strong>String(n)</strong></dt>
+                        <dd>Text field with maximum length n characters. UTF-8 encoding.</dd>
+                    </div>
+                    <div class="glossary-item">
+                        <dt><strong>Decimal(p,s)</strong></dt>
+                        <dd>Numeric field with precision p (total digits) and scale s (decimal places). Example: Decimal(12,2) = 9999999999.99</dd>
+                    </div>
+                    <div class="glossary-item">
+                        <dt><strong>Date</strong></dt>
+                        <dd>Date value in ISO 8601 format: YYYY-MM-DD</dd>
+                    </div>
+                    <div class="glossary-item">
+                        <dt><strong>DateTime</strong></dt>
+                        <dd>Date and time in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ</dd>
+                    </div>
+                    <div class="glossary-item">
+                        <dt><strong>Boolean</strong></dt>
+                        <dd>True/false value. Represented as 1/0 or true/false</dd>
+                    </div>
+                    <div class="glossary-item">
+                        <dt><strong>Enum</strong></dt>
+                        <dd>Predefined list of allowed values. Must match exactly.</dd>
+                    </div>
+                </dl>
+                
+                <h2>Standard Rating Logic Example</h2>
+                <pre class="code-block"><code>IF construction_type == "Wood Frame" THEN
+    base_rate_multiplier = 1.2
+ELSE IF construction_type == "Masonry" THEN
+    base_rate_multiplier = 1.0
+ELSE IF construction_type == "Concrete" THEN
+    base_rate_multiplier = 0.9
+END IF
+
+IF occupancy_type == "Warehouse" THEN
+    occupancy_multiplier = 1.15
+ELSE IF occupancy_type == "Office" THEN
+    occupancy_multiplier = 1.0
+END IF
+
+base_premium = limit / 1000 * base_rate
+final_premium = base_premium * base_rate_multiplier * occupancy_multiplier
+
+IF final_premium > referral_threshold THEN
+    status = "Referral Required"
+ELSE
+    status = "Auto-Bind Eligible"
+END IF</code></pre>
+                
+                <p><strong>Note:</strong> FacioMGA uses this logic structure natively, allowing business users to configure rating rules without code.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 The MGA Tech Guide. Presented by Facio.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

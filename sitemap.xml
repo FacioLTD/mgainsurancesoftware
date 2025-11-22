@@ -12,6 +12,28 @@
         <priority>1.0</priority>
     </url>
     
+    <!-- AEO Utility Pages -->
+    <url>
+        <loc>https://www.mgainsurancesoftware.com/mga-technical-glossary.html</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.mgainsurancesoftware.com/mga-data-standard.html</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.mgainsurancesoftware.com/mga-tech-pitfalls.html</loc>
+        <lastmod>2025-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
     <!-- Lloyd's Coverholder Software Page -->
     <url>
         <loc>https://www.mgainsurancesoftware.com/lloyds-coverholder-software.html</loc>

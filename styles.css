@@ -1042,6 +1042,93 @@ li {
     font-weight: 600;
 }
 
+/* Data Standard Table */
+.data-standard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-xl) 0;
+    background: var(--bg-primary);
+    box-shadow: var(--box-shadow-md);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.data-standard-table thead {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--text-on-dark);
+}
+
+.data-standard-table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-on-dark);
+}
+
+.data-standard-table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-secondary);
+}
+
+.data-standard-table tbody tr:hover {
+    background: var(--bg-secondary);
+}
+
+.data-standard-table code {
+    background: var(--bg-secondary);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--primary-color);
+}
+
+/* Code Block */
+.code-block {
+    background: var(--bg-dark);
+    color: var(--text-on-dark);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    margin: var(--spacing-xl) 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.code-block code {
+    color: var(--text-on-dark);
+    background: transparent;
+    padding: 0;
+}
+
+/* Pitfall Items */
+.pitfall-item {
+    background: var(--bg-primary);
+    border-left: 4px solid var(--warning-color);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow-md);
+}
+
+.pitfall-item h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+}
+
+.pitfall-item ul {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.pitfall-item li {
+    margin-bottom: var(--spacing-xs);
+}
+
 .checklist-item h3 {
     color: var(--primary-color);
     margin-top: 0;
