@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favicon Generator</title>
+</head>
+<body>
+    <h1>Favicon Generator for MGA Tech Guide</h1>
+    <p>Open browser console and run this to generate favicons:</p>
+    <canvas id="canvas32" width="32" height="32" style="border: 1px solid #ccc;"></canvas>
+    <canvas id="canvas16" width="16" height="16" style="border: 1px solid #ccc;"></canvas>
+    <canvas id="canvas180" width="180" height="180" style="border: 1px solid #ccc;"></canvas>
+    
+    <script>
+        function createFavicon(size, canvasId) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#0056b3');
+            gradient.addColorStop(1, '#0d6efd');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Add rounded corners
+            ctx.globalCompositeOperation = 'destination-in';
+            ctx.beginPath();
+            ctx.roundRect(0, 0, size, size, size * 0.2);
+            ctx.fill();
+            ctx.globalCompositeOperation = 'source-over';
+            
+            // Add text
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${size * 0.5}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            const text = size <= 16 ? 'M' : 'MGA';
+            ctx.fillText(text, size / 2, size / 2);
+            
+            // Download
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `favicon-${size}x${size}.png`;
+                a.click();
+            });
+        }
+        
+        // Create all favicons
+        createFavicon(32, 'canvas32');
+        createFavicon(16, 'canvas16');
+        createFavicon(180, 'canvas180');
+    </script>
+</body>
+</html>
+

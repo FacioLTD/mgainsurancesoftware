@@ -6,7 +6,7 @@
     
     <!-- Main Page -->
     <url>
-        <loc>https://mgainsurancesoftware.com/</loc>
+        <loc>https://www.mgainsurancesoftware.com/</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
     
     <!-- Lloyd's Coverholder Software Page -->
     <url>
-        <loc>https://mgainsurancesoftware.com/lloyds-coverholder-software.html</loc>
+        <loc>https://www.mgainsurancesoftware.com/lloyds-coverholder-software.html</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -22,7 +22,7 @@
     
     <!-- PAS Buyer's Checklist Page -->
     <url>
-        <loc>https://mgainsurancesoftware.com/pas-buyers-checklist.html</loc>
+        <loc>https://www.mgainsurancesoftware.com/pas-buyers-checklist.html</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -30,7 +30,7 @@
     
     <!-- What Is an MGA Page -->
     <url>
-        <loc>https://mgainsurancesoftware.com/what-is-an-mga.html</loc>
+        <loc>https://www.mgainsurancesoftware.com/what-is-an-mga.html</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -38,7 +38,7 @@
     
     <!-- AI Agents for MGAs Page -->
     <url>
-        <loc>https://mgainsurancesoftware.com/ai-agents-for-mgas.html</loc>
+        <loc>https://www.mgainsurancesoftware.com/ai-agents-for-mgas.html</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -46,28 +46,28 @@
     
     <!-- Section Anchors (for better indexing) -->
     <url>
-        <loc>https://mgainsurancesoftware.com/#comparison</loc>
+        <loc>https://www.mgainsurancesoftware.com/#comparison</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://mgainsurancesoftware.com/#features</loc>
+        <loc>https://www.mgainsurancesoftware.com/#features</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://mgainsurancesoftware.com/#faq</loc>
+        <loc>https://www.mgainsurancesoftware.com/#faq</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://mgainsurancesoftware.com/#contact</loc>
+        <loc>https://www.mgainsurancesoftware.com/#contact</loc>
         <lastmod>2025-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

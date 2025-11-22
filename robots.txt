@@ -17,6 +17,7 @@ Allow: /images/
 Allow: /assets/
 
 # Sitemap location
+Sitemap: https://www.mgainsurancesoftware.com/sitemap.xml
 Sitemap: https://mgainsurancesoftware.com/sitemap.xml
 
 # Crawl-delay for respectful crawling (optional)
