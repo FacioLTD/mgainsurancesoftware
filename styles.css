@@ -701,6 +701,21 @@ li {
     color: var(--primary-color);
 }
 
+/* About Section */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    margin-bottom: var(--spacing-lg);
+    line-height: var(--line-height-base);
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* FAQ Section */
 .faq-section {
     background: var(--bg-secondary);
