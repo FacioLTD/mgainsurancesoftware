@@ -1129,6 +1129,91 @@ li {
     margin-bottom: var(--spacing-xs);
 }
 
+/* Calculator Styles */
+.calculator-wrapper {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    margin: var(--spacing-xl) 0;
+    box-shadow: var(--box-shadow-md);
+}
+
+.calculator-inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.calculator-inputs label {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+    display: block;
+}
+
+.calculator-inputs input {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+.calculator-inputs input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.calculator-inputs button {
+    grid-column: 1 / -1;
+    margin-top: var(--spacing-sm);
+}
+
+.calculator-results {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 2px solid var(--border-color);
+}
+
+.calculator-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+}
+
+.calculator-table td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.calculator-table .result-row {
+    background: var(--bg-secondary);
+    font-weight: 600;
+}
+
+.calculator-table .result-row td {
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.calculator-error {
+    color: var(--error-color);
+    padding: var(--spacing-md);
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--error-color);
+}
+
+.calculator-note {
+    margin-top: var(--spacing-md);
+    color: var(--text-light);
+    font-style: italic;
+}
+
 .checklist-item h3 {
     color: var(--primary-color);
     margin-top: 0;
