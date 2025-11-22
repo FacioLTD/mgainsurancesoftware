@@ -919,6 +919,24 @@ li {
     color: var(--primary-dark);
 }
 
+/* Competitor links - subtle, helpful style */
+.competitor-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+}
+
+.competitor-link:hover,
+.competitor-link:focus {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
 /* Links in dark sections */
 .hero a,
 .cta-section a {
